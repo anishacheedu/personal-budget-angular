@@ -357,48 +357,23 @@ template {
 
 
 
+
+
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-size: 10px;
+/*This is an A11y Change*/font-size: 15px;
   font-family: Tahoma, Arial;
 }
 
-div.menu {
-  width: 100%;
-  background-color: #4d5791;
-  height: 44px;
-  padding: 0 40px;
-}
 
-div.menu ul,
-div.menu ul li {
-  margin: 0;
-  padding: 0 ;
-  list-style: none;
-  display: inline-block;
-}
-
-div.menu ul li a {
-  display: block;
-  padding: 0 20px;
-  line-height: 44px;
-  font-size: 1.4em;
-  text-decoration: none;
-  color: #fff;
-  margin: 0;
-}
-
-div.menu ul li a:hover  {
-  background-color: white;
-  color: #4d5791;
-}
 
 div.hero {
   height: 350px;
-  background-color: #7f9bdc;
+  background-color: #b4c6f0;
   background-image: url('/assets/bg.png');
   background-size: 400px;
   background-repeat: no-repeat;
@@ -410,7 +385,7 @@ div.hero h1,
 div.hero h2 {
   text-align: center;
   margin: 0;
-}
+}f
 
 div.hero h1 {
   color: #fff;
