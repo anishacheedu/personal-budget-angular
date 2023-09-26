@@ -350,42 +350,62 @@ template {
 
 
 
-
-
-
-
-
-
-
-
-
-
 * {
   box-sizing: border-box;
 }
 
 body {
-/*This is an A11y Change*/font-size: 15px;
+  font-size: 10px;
   font-family: Tahoma, Arial;
 }
 
+div.menu {
+  width: 100%;
+  background-color: #4d5791;
+  height: 44px;
+  padding: 0 40px;
+}
 
+div.menu ul,
+div.menu ul li {
+  margin: 0;
+  padding: 0 ;
+  list-style: none;
+  display: inline-block;
+}
+
+div.menu ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 44px;
+  font-size: 1.4em;
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+}
+
+div.menu ul li a:hover  {
+  background-color: white;
+  color: #4d5791;
+}
 
 div.hero {
-  height: 350px;
   background-color: #b4c6f0;
-  background-image: url('/assets/bg.png');
-  background-size: 400px;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  padding-top: 40px;
+  text-align: center;
+  padding: 20px;
 }
+
+div.hero img{
+  max-width: 15%;
+  height:auto;
+}
+
 
 div.hero h1,
 div.hero h2 {
   text-align: center;
   margin: 0;
-}f
+}
 
 div.hero h1 {
   color: #fff;
@@ -398,8 +418,17 @@ div.hero h2 {
 }
 
 .container {
-  padding: 40px;
-  width: 100%;
+  padding: 20px;
+}
+
+.maincontent-skip {
+  position: absolute;
+  /* bottom: -610px; */
+  background-color: #4d5791;
+  color: #fff;
+  padding: 5px 5px;
+  text-decoration: none;
+  left: 45%;
 }
 
 .page-area {
@@ -417,16 +446,56 @@ div.hero h2 {
   text-align: center;
 }
 
-.container div.text-box {
-  display: inline-block;
+// .container div.text-box {
+//   display: inline-block;
+//   width: 100%;
+//   max-width: 340px;
+//   text-align: justify;
+//   margin: 20px;
+// }
+
+// @media screen and (min-width: 768px) {
+//   .container .div.text-box {
+//       margin: 10px;
+//   }
+// }
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
   width: 100%;
-  max-width: 340px;
-  text-align: justify;
-  margin: 20px;
+  height: 100px;
+}
+.chart {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  height: 350px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-@media screen and (min-width: 768px) {
-  .container .div.text-box {
-      margin: 10px;
-  }
+p.para{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.skip-link {
+  position: absolute;
+  top: 10px;
+  background-color: #4d5791;
+  color: #fff;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin-left: 85%;
+}
+article {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
